@@ -6,6 +6,7 @@ import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Root from "./Components/Root/Root";
 import Home from "./Components/Home/Home";
+import DonationDetails from "./Components/DonationDetails/DonationDetails";
 
 const router = createBrowserRouter([
   {
@@ -13,7 +14,7 @@ const router = createBrowserRouter([
     element: <Root></Root>,
     children: [
       {
-        path: "/Home",
+        path: "/",
         element: <Home />,
         loader: () => fetch ('data.json')
       },
@@ -25,6 +26,14 @@ const router = createBrowserRouter([
         path: "/Statistics",
         element: <div>This is Statistics</div>,
       },
+
+      {
+        path: "/Home/:id",
+        element: <DonationDetails></DonationDetails>,
+        loader: () => fetch('../data.json')
+      },
+
+
     ],
   },
 ]);

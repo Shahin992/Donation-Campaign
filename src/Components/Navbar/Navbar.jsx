@@ -17,7 +17,7 @@ const Navbar = () => {
           <ul className="menu menu-horizontal px-1">
             <li className="md: font-semibold  md:text-2xl mr-5">
               <NavLink
-                to="/Home"
+                to="/"
                 className={({ isActive, isPending }) =>
                   isPending
                     ? "pending"
