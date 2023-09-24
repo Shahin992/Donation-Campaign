@@ -1,0 +1,148 @@
+[
+    {
+      "id": 1,
+      "picture": "https://i.ibb.co/JsPXKzh/Health.png",
+      "title": "Charity Fundraiser",
+      "category": "Health",
+      "category_bg_color": "#0052FF26",
+      "text_color": "#0052FF",
+      "text_button_bg_color": "#0052FF33",
+      "description": "Support a worthy cause with our charity fundraiser.",
+      "price": 290
+    },
+
+    {
+        "id": 4,
+        "picture": "https://i.ibb.co/8B3kgGS/Education.png",
+        "title": "Education Donation Drive",
+        "category": "Education",
+        "category_bg_color": "#FF444A26",
+        "text_color": "#FF444A",
+        "text_button_bg_color": "#FF444A33",
+        "description": "Support education for underserved communities with your donation.",
+        "price": 230
+      },
+
+      {
+        "id": 10,
+        "picture": "https://i.ibb.co/qFkh5K2/Clothing.png",
+        "title": "Fashionable Dress",
+        "category": "Clothing",
+        "category_bg_color": "#79C23F26",
+        "text_color": "#79C23F",
+        "text_button_bg_color": "#79C23F33",
+        "description": "Step out in style with our fashionable dress collection.",
+        "price": 305
+      },
+
+      {
+        "id": 7,
+        "picture": "https://i.ibb.co/xMGgpRB/Food.png",
+        "title": "Food Bank Support",
+        "category": "Food",
+        "category_bg_color": "#F8714726",
+        "text_color": "#F87147",
+        "text_button_bg_color": "#F8714733",
+        "description": "Provide meals to those in need through your food bank donation.",
+        "price": 310
+      },
+
+      {
+        "id": 8,
+        "picture": "https://i.ibb.co/xMGgpRB/Food.png",
+        "title": "Hunger Relief Fund",
+        "category": "Food",
+        "category_bg_color": "#F8714726",
+        "text_color": "#F87147",
+        "text_button_bg_color": "#F8714733",
+        "description": "Fight hunger and support food relief efforts with your donation.",
+        "price": 320
+      },
+
+
+      {
+        "id": 11,
+        "picture": "https://i.ibb.co/qFkh5K2/Clothing.png",
+        "title": "Men's Casual Shirts",
+        "category": "Clothing",
+        "category_bg_color": "#79C23F26",
+        "text_color": "#79C23F",
+        "text_button_bg_color": "#79C23F33",
+        "description": "Upgrade your wardrobe with our comfortable casual shirts.",
+        "price": 315
+      },
+
+      {
+        "id": 5,
+        "picture": "https://i.ibb.co/8B3kgGS/Education.png",
+        "title": "Scholarship Fund",
+        "category": "Education",
+        "category_bg_color": "#FF444A26",
+        "text_color": "#FF444A",
+        "text_button_bg_color": "#FF444A33",
+        "description": "Contribute to a scholarship fund and help students achieve their dreams.",
+        "price": 220
+      },
+
+    {
+      "id": 2,
+      "picture": "https://i.ibb.co/JsPXKzh/Health.png",
+      "title": "Donate for Wellness",
+      "category": "Health",
+      "category_bg_color": "#0052FF26",
+      "text_color": "#0052FF",
+      "text_button_bg_color": "#0052FF33",
+      "description": "Make a difference by donating for health and wellness programs.",
+      "price": 280
+    },
+   
+    {
+      "id": 3,
+      "picture": "https://i.ibb.co/JsPXKzh/Health.png",
+      "title": "Fitness for All Charity",
+      "category": "Health",
+      "category_bg_color": "#0052FF26",
+      "text_color": "#0052FF",
+      "text_button_bg_color": "#0052FF33",
+      "description": "Help make fitness accessible to all through your donation.",
+      "price": 260
+    },
+  
+    {
+      "id": 6,
+      "picture": "https://i.ibb.co/8B3kgGS/Education.png",
+      "title": "Digital Literacy Campaign",
+      "category": "Education",
+      "category_bg_color": "#FF444A26",
+      "text_color": "#FF444A",
+      "text_button_bg_color": "#FF444A33",
+      "description": "Support a campaign to promote digital literacy through your donation.",
+      "price": 180
+    },
+    
+    
+    {
+      "id": 9,
+      "picture": "https://i.ibb.co/xMGgpRB/Food.png",
+      "title": "Meal Sponsorship Program",
+      "category": "Food",
+      "category_bg_color": "#F8714726",
+      "text_color": "#F87147",
+      "text_button_bg_color": "#F8714733",
+      "description": "Sponsor meals for those in need through your donation.",
+      "price": 330
+    },
+  
+    {
+      "id": 12,
+      "picture": "https://i.ibb.co/qFkh5K2/Clothing.png",
+      "title": "Kids' Fashion",
+      "category": "Clothing",
+      "category_bg_color": "#79C23F26",
+      "text_color": "#79C23F",
+      "text_button_bg_color": "#79C23F33",
+      "description": "Dress your kids in the latest fashion trends.",
+      "price": 320
+    }
+  ]
+  
