@@ -1,17 +1,64 @@
 import { useLoaderData, useParams } from "react-router-dom";
 
+import Swal from 'sweetalert2';
+import 'sweetalert2/dist/sweetalert2.min.css';
+
+
 const DonationDetails = () => {
   const data = useLoaderData();
   const { id } = useParams();
   const idInt = parseInt(id);
 
   const donationDetails = data.find((data) => data.id === idInt);
+  console.log(donationDetails);
 
   const backgroundImageUrl = `url(${donationDetails.picture})`;
 
   const cardStyle = {
     backgroundColor: donationDetails.text_color,
   };
+
+ 
+
+  // const handleDonation = () => {
+  //   const donationDetails = data.find((data) => data.id === idInt);
+  
+  //   const donationAdded = JSON.parse(localStorage.getItem('addedDonation')) || [];
+  
+  //   donationAdded.push(donationDetails);
+  
+  //   localStorage.setItem('addedDonation', JSON.stringify(donationAdded));
+  // };
+
+
+  const handleDonation = () => {
+    const donationDetails = data.find((data) => data.id === idInt);
+  
+    const donationAdded = JSON.parse(localStorage.getItem('addedDonation')) || [];
+  
+    const isDuplicate = donationAdded.some((donation) => donation.id === donationDetails.id);
+  
+    if (!isDuplicate) {
+      // Add the current donationDetails to the existing donationAdded array
+      donationAdded.push(donationDetails);
+  
+      localStorage.setItem('addedDonation', JSON.stringify(donationAdded));
+  
+      Swal.fire({
+        icon: 'success',
+        title: 'Success',
+        text: 'Donation added successfully!',
+      });
+    } else {
+   
+      Swal.fire({
+        icon: 'error',
+        title: 'Error',
+        text: 'This donation is already in your list.',
+      });
+    }
+  };
+  
 
   return (
     <div>
@@ -30,7 +77,7 @@ const DonationDetails = () => {
             <div>  <div className=" hero-overlay absolute inset-0 -top-24 md:-top-32 bg-black opacity-40 md:h-32  lg:w-[1340px]">
              
             </div>
-            <button className=" flex text-xl font-medium absolute rounded-lg p-2 justify-start -top-24  lg:left-10" style={cardStyle}>Donate $ {donationDetails.price}</button>
+            <button onClick={handleDonation} className=" flex text-xl font-medium absolute rounded-lg p-2 justify-start -top-24  lg:left-10" style={cardStyle}>Donate $ {donationDetails.price}</button>
           </div>
           
         </div>
