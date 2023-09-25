@@ -8,6 +8,7 @@ import Root from "./Components/Root/Root";
 import Home from "./Components/Home/Home";
 import DonationDetails from "./Components/DonationDetails/DonationDetails";
 import Donation from "./Components/Donation/Donation";
+import Statistics from "./Components/Statistics/Statistics";
 
 
 const router = createBrowserRouter([
@@ -26,7 +27,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/Statistics",
-        element: <div>This is Statistics</div>,
+        element: <Statistics></Statistics>
       },
 
       {
@@ -43,5 +44,6 @@ const router = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <RouterProvider router={router} />
+    
   </React.StrictMode>
 );
