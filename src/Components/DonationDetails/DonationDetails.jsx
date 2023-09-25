@@ -10,7 +10,7 @@ const DonationDetails = () => {
   const idInt = parseInt(id);
 
   const donationDetails = data.find((data) => data.id === idInt);
-  console.log(donationDetails);
+  
 
   const backgroundImageUrl = `url(${donationDetails.picture})`;
 
@@ -19,18 +19,6 @@ const DonationDetails = () => {
   };
 
  
-
-  // const handleDonation = () => {
-  //   const donationDetails = data.find((data) => data.id === idInt);
-  
-  //   const donationAdded = JSON.parse(localStorage.getItem('addedDonation')) || [];
-  
-  //   donationAdded.push(donationDetails);
-  
-  //   localStorage.setItem('addedDonation', JSON.stringify(donationAdded));
-  // };
-
-
   const handleDonation = () => {
     const donationDetails = data.find((data) => data.id === idInt);
   
@@ -39,7 +27,7 @@ const DonationDetails = () => {
     const isDuplicate = donationAdded.some((donation) => donation.id === donationDetails.id);
   
     if (!isDuplicate) {
-      // Add the current donationDetails to the existing donationAdded array
+     
       donationAdded.push(donationDetails);
   
       localStorage.setItem('addedDonation', JSON.stringify(donationAdded));

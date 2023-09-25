@@ -7,6 +7,8 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Root from "./Components/Root/Root";
 import Home from "./Components/Home/Home";
 import DonationDetails from "./Components/DonationDetails/DonationDetails";
+import Donation from "./Components/Donation/Donation";
+
 
 const router = createBrowserRouter([
   {
@@ -20,7 +22,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/Donation",
-        element: <div>This is Donation</div>,
+        element: <Donation></Donation>
       },
       {
         path: "/Statistics",
