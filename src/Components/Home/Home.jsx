@@ -50,7 +50,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="grid grid-cols-1 lg:grid-cols-4 md: gap-5 mb-10">
+      <div className="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 gap-5 mb-10">
         {!isSearch
           ? data.map((data) => <Card data={data}></Card>)
           : categoryData[0].map((data) => {

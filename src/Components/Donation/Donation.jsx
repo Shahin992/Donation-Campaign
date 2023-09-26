@@ -14,17 +14,17 @@ const Donation = () => {
             setDonation(donationItem);
         }
         else{
-            setNoData("no data found");
+            setNoData("No data found");
         }
 
     },[])
-    return <dev>{nodata ? <p className="flex justify-center items-center text-4xl">{nodata}</p> 
+    return <dev>{nodata ? <p className="flex justify-center text-center items-center text-4xl">{nodata}</p> 
     
     : 
     
     <div>
 
-        <div className="grid grid-cols-2 gap-8 ">
+        <div className="grid grid-cols-1  md:grid-cols-2 gap-8 ">
         {
         isShow ? donation.map((donationData,idx) => <DonationPage key={idx} donationData = {donationData}></DonationPage>) :
 

@@ -7,7 +7,7 @@ const Navbar = () => {
         <div className="flex-1">
           <div>
             <img
-              className="w-[70%]"
+              className="md:w-full w-[75%]"
               src="https://i.ibb.co/kypTxxP/Logo.png"
               alt=""
             />
@@ -15,7 +15,7 @@ const Navbar = () => {
         </div>
         <div className="flex-none">
           <ul className="menu menu-horizontal px-1">
-            <li className="md: font-semibold  md:text-2xl mr-5">
+            <li className="md:font-semibold  md:text-2xl mr-2 md:mr-5">
               <NavLink
                 to="/"
                 className={({ isActive, isPending }) =>
@@ -29,7 +29,7 @@ const Navbar = () => {
                 Home
               </NavLink>
             </li>
-            <li className="md: font-semibold  md:text-2xl mr-5">
+            <li className="md:font-semibold  md:text-2xl mr-2 md:mr-5">
               <NavLink
                 to="/Donation"
                 className={({ isActive, isPending }) =>
@@ -43,7 +43,7 @@ const Navbar = () => {
                 Donation
               </NavLink>
             </li>
-            <li className="md: font-semibold  md:text-2xl mr-5">
+            <li className="md:font-semibold  md:text-2xl mr-2 md:mr-5">
               <NavLink
                 to="/Statistics"
                 className={({ isActive, isPending }) =>

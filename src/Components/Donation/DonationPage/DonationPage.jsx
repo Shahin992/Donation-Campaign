@@ -27,11 +27,11 @@ const DonationPage = ({ donationData }) => {
   return (
     <div>
       {
-        <div className="flex rounded-lg" style={cardStyle}>
+        <div className="flex flex-col md:flex-row rounded-lg " style={cardStyle}>
           <div>
             {/* img */}
             <figure>
-              <img className="rounded=xl h-full" src={picture} alt="Shoes" />
+              <img className="rounded=xl h-full w-full" src={picture} alt="Shoes" />
             </figure>
           </div>
 
