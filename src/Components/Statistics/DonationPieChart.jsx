@@ -1,4 +1,4 @@
-import { PieChart, Pie, Cell, Legend, Label } from "recharts";
+import { PieChart, Pie, Cell, Legend } from "recharts";
 
 const DonationPieChart = () => {
   const addedDonation = JSON.parse(localStorage.getItem("addedDonation")) || [];
@@ -29,7 +29,6 @@ const DonationPieChart = () => {
             cx,
             cy,
             midAngle,
-            innerRadius,
             outerRadius,
             percent,
             index,
