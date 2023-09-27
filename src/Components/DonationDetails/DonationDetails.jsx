@@ -52,7 +52,7 @@ const DonationDetails = () => {
     <div>
       <div>
         <div
-          className="hero min-h-screen w-[90%] md:w-full"
+          className=" bg-cover bg-center"
           style={{
             backgroundImage: backgroundImageUrl,
           }}
@@ -61,8 +61,8 @@ const DonationDetails = () => {
             
             </div> </div>
           <div className="hero-content text-end text-neutral-content relative">
-            <div className="max-w-md">
-            <div>  <div className=" hero-overlay absolute inset-0 md:-top-24 lg:-top-32 bg-black opacity-40 md:h-32 md:w-full  lg:w-[1340px]">
+            <div>
+            <div>  <div className=" hero-overlay absolute inset-0 md:-top-24 lg:-top-32 md:bg-black opacity-40 lg:h-32 lg:w-[1340px]">
              
             </div>
             <button onClick={handleDonation} className=" flex text-xl font-medium absolute rounded-lg p-2 justify-start lg:-top-24  lg:left-10" style={cardStyle}>Donate $ {donationDetails.price}</button>

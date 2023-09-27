@@ -24,7 +24,7 @@ const Donation = () => {
     
     <div>
 
-        <div className="grid grid-cols-1  md:grid-cols-2 gap-8 ">
+        <div className="grid grid-cols-1  md:grid-cols-2 gap-10 ">
         {
         isShow ? donation.map((donationData,idx) => <DonationPage key={idx} donationData = {donationData}></DonationPage>) :
 
@@ -35,7 +35,7 @@ const Donation = () => {
 
        {
         donation.length > 4 && <div className="flex justify-center items-center text-center mt-5">
-        <button onClick={()=> setIsShow(!isShow)} className="btn bg-green-600 font-semibold text-white">{isShow ? "See Less" : "See All"}</button>
+        <button onClick={()=> setIsShow(!isShow)} className="btn bg-green-600 font-semibold text-white mb-5">{isShow ? "See Less" : "See All"}</button>
         </div>
        }
 

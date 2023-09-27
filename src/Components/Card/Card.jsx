@@ -18,7 +18,7 @@ const Card = ({data}) => {
     <div>
       <Link to = {`/Home/${id}`}>
       <div className="card card-compact shadow-xl" style={cardStyle}>
-      <figure><img className="rounded=xl card-side w-full" src={picture} alt="Shoes" /></figure>
+      <figure><img className="rounded=xl card-side  w-full" src={picture} alt="Shoes" /></figure>
         <div className="card-body">
           <h2 className="card-title p-2 w-[120px] flex justify-center items-center text-sm font-medium rounded-lg " style ={categoryBg} >{category}</h2>
           <p className="text-xl font-semibold">{title}</p>

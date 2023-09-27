@@ -3,16 +3,18 @@ import { NavLink } from "react-router-dom";
 const Navbar = () => {
   return (
     <div>
-      <div className="navbar justify-between items-center bg-base-100">
-        <div className="flex-1">
+      <div className="navbar justify-between flex flex-col gap-7 md:flex-row items-center bg-base-100">
+        
+        <div className="flex-1 ">
           <div>
             <img
-              className="md:w-full w-[75%]"
+              className="w-[90%] lg:w-full"
               src="https://i.ibb.co/kypTxxP/Logo.png"
               alt=""
             />
           </div>
         </div>
+
         <div className="flex-none">
           <ul className="menu menu-horizontal px-1">
             <li className="md:font-semibold  md:text-2xl mr-2 md:mr-5">
@@ -59,6 +61,7 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
+
       </div>
       
     </div>

@@ -14,7 +14,8 @@ const DonationPieChart = () => {
   const colors = ["#00C49F", "#FF444A"]; 
 
   return (
-    <div className="flex justify-center items-center">
+    <div className="sm:w-3/4 md:w-2/3 lg:w-1/2 mx-auto">
+      <div className="flex justify-center items-center">
       <PieChart width={400} height={400}>
         <Pie
           data={data}
@@ -55,6 +56,7 @@ const DonationPieChart = () => {
         </Pie>
         <Legend />
       </PieChart>
+      </div>
     </div>
   );
 };
