@@ -52,7 +52,7 @@ const DonationDetails = () => {
     <div>
       <div>
         <div
-          className=" bg-cover bg-center"
+          className="min-h-screen bg-cover bg-center"
           style={{
             backgroundImage: backgroundImageUrl,
           }}
